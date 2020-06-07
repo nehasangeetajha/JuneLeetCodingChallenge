@@ -46,7 +46,7 @@ public:
             if(coin>amount)
                 break;
             for (int i = 1; i <= amount; ++i) {
-			   // additonal way to reach i is i-coin + coin:
+			   // additional way to reach i is i-coin + coin:
                 if (i >= coin) T[i] += T[i-coin];
             }
         }
